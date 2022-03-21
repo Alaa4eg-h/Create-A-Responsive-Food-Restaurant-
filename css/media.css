@@ -1,0 +1,63 @@
+/*Start Media*/
+
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        padding: 2rem;
+    }
+
+    .home {
+        padding: 2rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header .menu-bar {
+        display: initial;
+    }
+
+    header nav {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        left: 0;
+        background: #f7f7f7;
+        border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+
+    header nav.active {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    header nav ul {
+        display: block;
+    }
+
+    header nav ul li a {
+        display: block;
+        padding: 1.5rem;
+        margin: 1.5rem;
+        border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
+        border-left: 0.5rem solid var(--red);
+    }
+
+    @media screen and (max-width: 450px) {
+        html {
+            font-size: 50%;
+        }
+
+        .order .box-container .form .inputBox {
+            display: block;
+        }
+
+        .order .box-container .form img {
+            padding: 0;
+        }
+    }
+}
+
+/*End Media*/
